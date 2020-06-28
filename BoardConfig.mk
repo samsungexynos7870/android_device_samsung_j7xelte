@@ -19,7 +19,7 @@ DEVICE_PATH := device/samsung/j7xelte
 BOARD_USE_TFA_AMP := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := j7xelte,j7xeltexc,j7xeltexx,j7xeltelk
+TARGET_OTA_ASSERT_DEVICE := j7xeltexx,j7xelte,j7xeltekk,j7xeltedx,j7xelteub
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
