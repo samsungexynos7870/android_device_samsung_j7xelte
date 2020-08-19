@@ -9,8 +9,8 @@ $ mkdir ofox ; cd ofox
 # Init repo
 $ repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
 
-# Clone my local repo
-$ git clone https://gitlab.com/android_samsung_universal7870/manifest/android_manifest_samsung_j7xelte.git -b orangefox .repo/local_manifests
+# Clone j7xelte repo
+$ git clone https://gitlab.com/OrangeFox/device/j7xelte.git -b fox_9.0 device/samsung/j7xelte
 
 # Sync
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
