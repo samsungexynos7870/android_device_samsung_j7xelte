@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
 
 # Custom mixer_paths
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml
+    $(DEVICE_PATH)/configs/audio/mixer_paths_rev03.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_rev03.xml
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1280
