@@ -30,4 +30,3 @@ PRODUCT_NAME := omni_j7xelte
 PRODUCT_MODEL := Samsung Galaxy J7 2016
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-
