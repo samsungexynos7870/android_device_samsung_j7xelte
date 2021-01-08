@@ -19,6 +19,8 @@ vendor/etc/Tfa9896.cnt
 vendor/bin/hw/android.hardware.bluetooth@1.0-service
 vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
 vendor/firmware/bcm43438_V0068.0285.hcd
+vendor/firmware/bcm43438A1_V0056.0256.hcd
+vendor/firmware/bcm4343A0_V0080.0285.hcd
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
 vendor/lib/libbt-vendor.so
 vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
