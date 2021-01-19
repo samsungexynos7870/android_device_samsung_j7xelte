@@ -41,9 +41,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor
 
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/bluetooth/bt_vendor.conf:vendor/etc/bluetooth/bt_vendor.conf
-
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
