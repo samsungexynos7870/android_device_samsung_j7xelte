@@ -122,7 +122,7 @@ void vendor_load_properties()
     }
 
     /* Common properties*/
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
     property_override("ro.build.description", "samsung/j7xeltexx/j7xelte:8.1.0/M1AJQ/J710FXXU6CSG2:user/release-keys");
     property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "j7xelte");
 
