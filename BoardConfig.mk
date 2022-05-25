@@ -18,6 +18,9 @@ DEVICE_PATH := device/samsung/j7xelte
 # Audio
 BOARD_USE_TFA_AMP := true
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j7xeltexx,j7xelte,j7xeltekk,j7xeltedx,j7xelteub
 
@@ -40,6 +43,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_j7xelte
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Wifi
 BOARD_WLAN_DEVICE                := bcmdhd

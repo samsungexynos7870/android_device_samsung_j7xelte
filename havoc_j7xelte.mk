@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The havocOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,25 +15,28 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from j7xelte device
 $(call inherit-product, device/samsung/j7xelte/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := j7xelte
-PRODUCT_NAME := lineage_j7xelte
+PRODUCT_NAME := havoc_j7xelte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := Galaxy J7 2016
 PRODUCT_MANUFACTURER := samsung
 
-TARGET_VENDOR := samsung
+WITH_GAPPS := false
+TARGET_SUPPORTS_BLUR := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
+TARGET_VENDOR := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 TARGET_BOOT_ANIMATION_RES := 720

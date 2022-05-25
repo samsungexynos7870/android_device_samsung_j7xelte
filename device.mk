@@ -27,6 +27,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths_rev03.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_rev03.xml
 
+# Launch Android API level
+PRODUCT_SHIPPING_API_LEVEL := 23
+
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -40,6 +43,8 @@ PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl.7870 \
     android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
     libbt-vendor
 
 # NFC
@@ -58,6 +63,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     mobicore.rc \
     wifi_device.rc
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
+
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
