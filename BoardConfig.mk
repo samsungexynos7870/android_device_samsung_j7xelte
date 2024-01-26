@@ -13,10 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/j7xelte
+LOCAL_PATH := device/samsung/j7xelte
 
 # Audio
-BOARD_USE_TFA_AMP := true
+# TFA-Audio
+BOARD_USES_EXYNOS7870_TFA_AMP := true
+
+# exynos7870 OSS audio hal
+TARGET_AUDIOHAL_VARIANT := samsung-exynos7870
+
+# Display
+TARGET_SCREEN_DENSITY := 320
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j7xeltexx,j7xelte,j7xeltekk,j7xeltedx,j7xelteub
@@ -31,15 +38,18 @@ BOARD_HAVE_SAMSUNG_BLUETOOTH := true
 # Kernel
 TARGET_KERNEL_CONFIG := exynos7870-j7xelte_defconfig
 
-# HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
+# Device Manifest
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
+
+# misc
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_j7xelte
+TARGET_INIT_VENDOR_LIB := //$(LOCAL_PATH):libinit_j7xelte
 TARGET_RECOVERY_DEVICE_MODULES := libinit_j7xelte
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)/releasetools
 
 # Wifi
 BOARD_WLAN_DEVICE                := bcmdhd

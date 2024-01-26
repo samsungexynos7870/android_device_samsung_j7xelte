@@ -76,4 +76,6 @@
     <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
     <bool name="config_enableBurnInProtection">true</bool>
 
+    <!--  WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION is deprecated in R so we move to overlay -->
+    <bool name="config_wifi_ap_randomization_supported">false</bool>
 </resources>
